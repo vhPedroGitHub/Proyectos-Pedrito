@@ -1,0 +1,20 @@
+# creando aplicacion del curso de python de pildora informatica
+# aplicacion CRUD donde podemos crear y conectar con una base de datos
+# a esta base de datos le podemos agregar informacion
+# leer informacion 
+# cambiarle info ya existente
+# borrar info
+
+from tkinter import *
+from tkinter import ttk
+import sqlite3
+from crud.all import *
+
+root = Tk()
+root.title('CRUD')
+root.resizable(FALSE, FALSE)
+
+Tdo=CRUD_complete(root)
+Tdo.colocando_widgets()
+
+root.mainloop()
